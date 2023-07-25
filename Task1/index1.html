@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Edu+SA+Beginner&family=Ubuntu:wght@300&family=Ultra&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        @media (max-width: 300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                /* grid-template-columns:auto; */
+                /* grid-template-rows: repeat(6,auto); */
+                grid-template-areas:
+                    'navigation navigation navigation navigation'
+                    'WelcomeHeading WelcomeHeading WelcomeHeading WelcomeHeading'
+                    'about1 about1 about1 about1'
+                    'service service service service'
+                    'aside-bar aside-bar aside-bar aside-bar'
+                    'contact contact contact contact'
+                    'foot foot foot foot'
+                ;
+            }
+            #about2{
+                display: none;
+            }
+
+            #services123 {
+                margin: 3px;
+                padding: 2px;
+                display: block;
+
+            }
+
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(19, 2, 22);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                /* grid-template-columns:auto; */
+                /* grid-template-rows: repeat(6,auto); */
+                grid-template-areas:
+                    'navigation navigation navigation navigation'
+                    'WelcomeHeading WelcomeHeading WelcomeHeading WelcomeHeading'
+                    'about1 about1 about1 about1'
+                    'about2 about2 about2 about2'
+                    'service service service service'
+                    'aside-bar aside-bar aside-bar aside-bar   '
+                    'contact contact contact contact'
+                    'foot foot foot foot'
+                ;
+            }
+
+            #WelcomeHeading h1 {
+                color: white;
+                text-align: left;
+                font-family: 'Baloo Bhai 2', cursive;
+                font-size: 50px;
+            }
+
+            #about1 h2 {
+                font-size: 3rem;
+                text-align: left;
+                font-family: 'Baloo Bhai 2', cursive;
+                color: red;
+                text-shadow: 3px 4px 10px yellow;
+
+            }
+        }
+
+
+        @media (min-width:500px) and (max-width: 800px) {
+            body {
+                background-color: rgba(28, 61, 33, 0.247);
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                /* grid-template-columns:auto; */
+                /* grid-template-rows: repeat(6,auto); */
+                grid-template-areas:
+                    'navigation navigation navigation navigation'
+                    'WelcomeHeading WelcomeHeading WelcomeHeading WelcomeHeading'
+                    'about1 about1 about1 about1'
+                    'about2 about2 about2 about2'
+                    'service service service service'
+                    'aside-bar aside-bar aside-bar aside-bar   '
+                    'contact contact contact contact'
+                    'foot foot foot foot'
+                ;
+            }
+
+            #WelcomeHeading h1 {
+                color: white;
+                text-align: left;
+                font-family: 'Baloo Bhai 2', cursive;
+                font-size: 50px;
+            }
+
+            #about1 h2 {
+                font-size: 3rem;
+                text-align: left;
+                font-family: 'Baloo Bhai 2', cursive;
+                color: red;
+                text-shadow: 3px 4px 10px yellow;
+
+        }
+    }
+
+       
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar deco" id="navigation">
+            <div class="logo">
+                <img src="logo.jpeg" alt="">
+            </div>
+            <div class="content">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="navbar deco" id="WelcomeHeading">
+            <h1>Welcome to TastyFood</h1>
+            <p>
+                Welcome ! We can't wait to start making great things happen with you. Nothing can bring us more pleasure
+                than giving you the service you deserve! Welcome to our place, and we are grateful for your stay with
+                us!.
+            </p>
+        </div>
+
+        <section class="section1 deco" id="about1">
+            <h2>Menu</h2>
+            <p>
+                Order and have delicious food ,meal,desserts!!!
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Non Veg</strong>
+                    <ul type="square">
+                        <li>Chicken pot pie |230/-</li>
+                        <!-- <li>Mashed potatoes</li> -->
+                        <li>Fried chicken|220/-</li>
+                        <li>Burgers |120/-</li>
+                        <li>Chicken soup |220/-</li>
+                        <li>Meatloaf |250/-</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong> Veg</strong>
+                    <ul type="disc">
+                        <li> Tandoori Paneer Tikka | 220/-</li>
+                        <li> Malai Paneer Tikka |220/- </li>
+                        <li> Soya Tandoori Tikka | 175/- </li>
+                        <li> Tandoori Aloo| 120/-</li>
+                        <li>Mashed potatoes| 100/-</li>
+                        <li>Shahi Paneer| 210/-</li>
+                        <li> Kadhai Paneer | 210/-</li>
+                        <li> Paneer Butter Masala|220/-</li>
+
+                        <li>Plain Cheese Pizza| 190/- </li>
+                        <li>Capsicum, Onion Pizza| 210/-
+                        </li>
+                        <li> Tomato, Onion Pizza |210/-</li>
+                        <li> Capsicum, Onion, Mashroom Pizza |220/-</li>
+                        <li> Pulao| 161/- </li>
+                        <li> Mix Veg. Pulao| 161/- </li>
+                        <li>Jeera Pulao |161/-</li>
+                        <li> Matka Biryani With Raita | 220/-</li>
+                        <li> Hyderabadi Biryani | 220/-</li>
+                    </ul>
+                <li>
+                    <strong>Desserts</strong>
+
+                    <ul type="square">
+                        <li> Cakes |230/-</li>
+
+                        <li>Cupcakes|220/-</li>
+                        <li>Brownies |120/-</li>
+                        <li>Ice Cream |220/-</li>
+                        <li>Cookies,Candies, Custards |250/-</li>
+                    </ul>
+                    </ul>
+                </li>
+
+            </ol>
+        </section>
+        <section class="section1 deco xyz" id="about2">
+            <p></p>
+            <h2>Food Corner</h2>
+            <p></p>
+
+            <p class="a">
+                A day is best started on a full stomach.
+            </p>
+            <p class="a"> Food is love, and it is better than love if you think about it! </p>
+            <p class="a"> Food is really and truly the most effective medicine</p>
+
+            <div class="box" id="img-11">
+                <img src="biryani.jpeg" alt="">
+                <br>
+                <span> <strong>Biryani</strong></span>
+                <span> Count the memories, not the calories. </span>
+            </div>
+            <div class="box" id="img-21">
+                <img src="chicken-chowmein.jpeg" alt="">
+                <br>
+                <br>
+                <span><strong>Chicken-Noodles</strong></span>
+                <span>Let’s ketchup</span>
+            </div>
+            <div class="box" id="img-31">
+                <img src="paneer.jpeg" alt="" height="95px">
+                <br>
+                <span><strong>Paneer</strong></span>
+                <span>Good food is the foundation of happiness.</span>
+            </div>
+            <div class="box" id="img-41">
+                <img src="onion-rings.jpeg" alt="">
+                <br>
+                <br>
+                <span><strong>Onion-Rings</strong></span>
+                <span>Sugar, spice, and everything nice.</span>
+            </div>
+            <div class="box" id="img-51">
+                <img src="chocolate.jpeg" alt="">
+                <br>
+                <span><strong>Chocolate Shake</strong></span>
+                <span id="cho">Nine out of ten people love chocolate, and the 10th person is always lying.</span>
+            </div>
+            <div class="box" id="img-61">
+                <img src="juice.jpeg" alt="">
+                <br>
+                <span><strong>Juice</strong></span>
+                <span>I love you to the fridge and back.</span>
+            </div>
+        </section>
+
+
+        <section class="section2 deco" id="service">
+            <h1>Our Services</h1>
+            <div id="services123">
+                <div class="box123">
+                    <img src="fooddelivery.jpeg" alt="">
+                    <h2 class="h-secondary center">Food Ordering</h2>
+                    <p class="center">
+                        The food at your doorstep
+                        <br>
+                        Why starve when you have us
+                    </p>
+                </div>
+                <div class="box123">
+                    <img src="curry.jpeg" alt="">
+                    <h2 class="h-secondary center">Bulk Ordering</h2>
+                    <p class="center">
+                        Order in Bulk for friends, family in discount!!!
+                    </p>
+                </div>
+                <div class="box123">
+                    <img src="burger.jpeg" alt="">
+                    <h2 class="h-secondary center">Food Catering</h2>
+                    <p class="center">
+                        Best catering services for birthday party, casual party, wedding!!!
+                </div>
+            </div>
+        </section>
+
+        </section>
+        <aside class="aside1 deco" id="aside-bar">
+            <h1>Login</h1>
+            <div class="boxa">
+                <form action="">
+                    <div>
+                        <label for="n"> Name:</label>
+                        <input type="text" name="Name:" id="n">
+                    </div>
+                    <div>
+                        <label for="e">Email:</label>
+                        <input type="email" name="Email:" id="e">
+                    </div>
+                    <div><label for="g">Gender:</label>
+                        Male:<input type="radio" name="Gender" id="g">Female: <input type="radio" name="Gender" id="g">
+                    </div>
+                    <div>
+                        <label for="food">Food Order:</label>
+                        <select name="MFfood" id="food">
+                            <option value="">Food Ordering</option>
+                            <option value="">Food Catering</option>
+                            <option value="">Bulk Ordering</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="c">Menu :</label>
+                        Chicken pot pie<input type="checkbox" name="" id="c">
+                        Fried Chicken<input type="checkbox" name="" id="c">
+                        Burgers<input type="checkbox" name="" id="c">
+                        Paneer <input type="checkbox" name="" id="c">
+                        Biryani <input type="checkbox" name="" id="c">
+                        Chocolate shake<input type="checkbox" name="" id="c">
+                    </div>
+                    <div>
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </aside>
+        <section class="section3 deco" id="contact">
+            <h1>contact details</h1>
+            <div class="l1">
+                <img src="logo.jpeg" alt="">
+            </div>
+            <p class="l2">
+                E-mail id: tastyfood123@gmail.com
+            </p>
+            <p class="l3">
+                Contact Number:
+                9209875634
+            </p>
+            <p class="l4">
+                Location:
+                abc complex near raja vihar,New Delhi
+            </p>
+        </section>
+        <footer class="footer deco" id="foot">
+            Copyright &copy; TastyFood 2023| All rights reserved!!!
+        </footer>
+    </div>
+</body>
+
+</html>
