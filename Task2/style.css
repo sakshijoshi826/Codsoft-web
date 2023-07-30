@@ -1,0 +1,233 @@
+.border {
+
+    /* styling */
+    /* border: 2px solid red; */
+    box-shadow: -4px -4px 12px greenyellow;
+    background-color: white;
+    margin: 4px;
+    padding: 14px;
+}
+
+.container {
+    display: grid;
+    /* grid-template-areas: */
+    grid-template-areas:
+        'intro intro'
+        'tagline tagline'
+        'about project'
+        'skill project'
+        'resume resume'
+        'contact contact'
+        'copyright copyright'
+    ;
+}
+
+/* introduction */
+
+#intro {
+    grid-area: intro;
+    background-color: black;
+   
+}
+
+header .logo img {
+    height: 100px;
+    width: 100px;
+    /* align-items: center;  */
+    margin: 2px;
+    padding: 2px;
+
+}
+
+header .name h1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    color: white;
+    /* font  */
+    font-size: 50px;
+    font-weight: 1rem;
+    /* color: black; */
+    text-shadow: 3px 4px 10px rgb(177, 226, 43);
+}
+
+/* tagline */
+#tagline {
+    grid-area: tagline;
+    background: url('i1.jpeg')no-repeat center center/cover;
+    
+}
+
+#tagline p {
+    
+    font-size: 20px;
+    font-weight: 10rem;
+
+    color: black;
+    /* text-shadow: 3px 4px 10px blueviolet;  */
+    
+
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ultra', serif;  */
+}
+
+/* about */
+#about {
+    grid-area: about;
+    background-color: rgb(178, 237, 241);
+}
+span{
+    font-family: 'Bree Serif', serif;  
+}
+
+details {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+    font-weight: 1rem;
+    color: black;
+    border: 2px solid palevioletred;
+    box-shadow: 3px 4px 10px rgb(98, 11, 238);
+    margin: 4px;
+}
+
+#project img {
+    height: 100px;
+    width: 100px;
+    /* align-items: center;  */
+    margin: 2px;
+    padding: 2px;
+
+}
+
+.wow {
+    border: 2px solid rgb(96, 245, 9);
+    background-color: white;
+    box-shadow: 3px 4px 10px rgb(98, 11, 238);
+
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+div.gfg {
+    margin: 5px;
+    padding: 5px;
+    /* background-color: green; */
+    width: 80%;
+    height: 500px;
+    overflow: auto;
+    text-align: justify;
+}
+
+/* skill */
+#skill {
+    grid-area: skill;
+}
+article img{
+    display: flex;
+position: relative;
+left: 36%;
+top: 20px;
+width: 245px;
+height: 225px;
+border: 2px solid blue;
+box-shadow: 14px 18px 33px violet;
+}
+#skill li{
+    font-family: 'Baloo Bhai 2', cursive;  
+    font-size: 20px; 
+    color: blue;
+    /* text-align: center;  */
+}
+
+/* project list  */
+#project {
+    grid-area: project;
+    background: url('i2.jpeg')no-repeat center center/cover;
+}
+#project h3{
+    font-size: 30px;
+    font-weight: 1rem;
+    color: black;
+    text-shadow: 3px 4px 10px rgb(224, 9, 9);  
+}
+
+/* resume */
+#resume {
+    grid-area: resume;
+    background: url('blank.jpeg');
+}
+button{
+    width: 90px; 
+    height: 40px;
+    border:2px solid black ;
+    border-radius :24px; 
+    background-color:blue ;
+    box-shadow:purple ;
+    color: white;
+    font-size: 1rem;
+}
+button:hover{
+    width: 100px; 
+    height: 40px;
+    border:2px solid black  ;
+    border-radius:14px ;
+    background-color:cyan ;
+    box-shadow: purple;
+    color:black ;
+}
+
+/* contact  */
+#contact {
+    grid-area: contact;
+    background: url('contact.jpeg')no-repeat center center/cover;
+}
+
+.photo img{
+    height: 100px;
+    width: 100px;
+    /* align-items: center;  */
+    margin: 5px;
+    padding: 5px;
+    /* border: 2px solid black; */
+    /* box-shadow: 2px 2px 2px greenyellow; */
+    /* position: relative; */
+     /* left: 48%;  */
+}
+.con p{
+    font-family: 'Baloo Bhai 2', cursive;  
+    font-size: 20px; 
+    text-align: center; 
+}
+
+
+/* footer  */
+#copyright {
+    grid-area: copyright;
+    background-color: yellow;
+}
+footer{
+    text-align: center;
+    color: rgb(14, 2, 2);
+/* background-color: black; */
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* font family */
+/* font-family: 'Acme', sans-serif;
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Bree Serif', serif;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Ultra', serif; */
+.heading {
+    font-size: 50px;
+    font-weight: 1rem;
+    color: black;
+    text-shadow: 3px 4px 10px blueviolet;
+    text-align: center;
+}

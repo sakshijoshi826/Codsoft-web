@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Bhai+2&family=Bree+Serif&family=Edu+SA+Beginner&family=Ubuntu:wght@300&family=Ultra&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       @media(min-width:100px) and (max-width:700px){
+        .container {
+    display: grid;
+    /* grid-template-areas: */
+    grid-template-areas:
+        'intro intro'
+        'tagline tagline'
+        'about about'
+        'skill skill'
+        'project project'
+        'resume resume'
+        'contact contact'
+        'copyright copyright'
+    ;
+}
+       }
+       @media(min-width:700px) and (max-width:900px){
+        article img{
+    display: flex;
+position: relative;
+left: 8%;
+    top: 1px;
+    width: 237px;
+    height: 165px;
+border: 2px solid blue;
+box-shadow: 14px 18px 33px violet;
+}
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header id="intro" class="box1 border">
+            <div class="logo">
+                <img src="p1.jpeg" alt="">
+            </div>
+            <div class="name">
+                <h1>Sakshi Joshi</h1>
+            </div>
+        </header>
+        <nav id="tagline" class=" box2 border">
+            <p>
+                My name is Sakshi Joshi. I am from Uttarakhand .
+
+                I am pursuing my B-Tech in Computer Science and Engineering from Amrapali Institute of Technology and Science with a Percentage of 80.
+                
+                I have learned Technologies like C, Java, Python, HTML ,JavaScript, CSS , Node.JS and MongoDB.  I am skilled in Web Development and Designing.
+                
+                My hobbies are reading Books, Learning new things, Creativity and Art.
+                
+                My short-term goal is to get a job in a reputed company  and explore my skills.
+                
+                My long-term goal is that I want to see myself a leading position with effective knowledge and more skills.
+                
+                
+            </p>
+            <p>
+                "Success is not final, failure is not fatal: it is the courage to continue that counts."
+- Winston Churchill
+            </p>
+        </nav>
+        <section id="about" class="border">
+            <h1 class="heading">About</h1>
+            <div class="i">
+                <span>I have learned Technologies like C, Java, Python, HTML ,JavaScript, CSS , Node.JS and MongoDB.  I am skilled in Web Development and Designing.</span> 
+            </div>
+            <div class="bio">
+                <h3 class="heading">bio</h3>
+                <p>
+
+                <details>
+                    <summary>
+                        <h3>Graduation</h3>
+                        <p>B.Tech(CSE) <br>Grade: 80% <br>Amrapali Institute of Technology and Science</p>
+                        <h3>Secondary Schooling</h3>
+                        <p>12th (CBSE) <br>Grade: 86.8% <br>The Masters Senior Secondary School</p>
+                        <h3>High School</h3>
+                        <p>10th(CBSE) <br>Grade: 81.6% <br>The Masters Senior Secondary School</p>
+                    </summary>
+                    Seeking a beginner role to enhance and explore my technical knowledge gained at Uttarakhand technical University in the last three years. I hold a B.Tech degree from Amrapali Institute of Technology and Science and won the quiz challenge held at the campus. <br>Looking to utilize my technology and leadership skills in an esteemed organization. Well versed with research-oriented marketing abilities and product analysis. Tech-savvy and a fast learner with innate communication skills and natural curiosity for product marketing.
+                </details>
+                </p>
+            </div>
+        </section>
+        <article id="skill" class="border">
+            <h2 class="heading">Skill</h2>
+            <img src="rating.jpeg" alt="">
+            <div class="gfg">
+            <ul>
+            <li>Communication</li>
+            <li>Leadership</li>
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+            <li>C</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node.JS</li>
+            <li>MongoDB</li>
+            <li>Machine Learning</li>
+            <li>pandas , Scikit learn , Matplotlib</li>
+            <li>SQL</li>
+            </ul>
+        </div>
+        </article>
+        <aside id="project" class="border">
+            <h2 class="heading">Projects</h2>
+
+            <!-- web dev project  -->
+            <h3>Web Development Project</h3>
+            <div class="gfg">
+                <div class="wow">
+                    <h3>Gym Website </h3>
+                    <details>
+                        <summary>Using HTML and CSS</summary>
+                        This project mainly focused on CSS Design System to make a website optimized and scalable.
+                    </details>
+                    <img src="p2.jpeg" alt="">
+                </div>
+
+                <div class="wow">
+                    <h3>Food Website</h3>
+                    <details>
+                        <summary>This website is created using CSS and HTML</summary>
+                       Various CSS property are used to make it interactive and look good.Media Queries are used for responsive site.
+                       This food ordering system allows the user to select the desired food items from a list of available menu items provided by the local hotel or restaurant. 
+                    </details>
+                    <img src="p2.jpeg" alt="">
+                </div>
+
+
+                <div class="wow">
+                    <h3>Art Gallery project</h3>
+                    <details>
+                        <summary>Front-end Development</summary>
+                        Online Art Gallery Project is a web-based platform that allows artists and art enthusiasts to showcase, view, and purchase art pieces.
+                    </details>
+                    <img src="p2.jpeg" alt="">
+                </div>
+
+
+            </div>
+            <!-- Machine Learning  -->
+            <h3>Machine Learning</h3>
+            <div class="gfg">
+                <div class="wow">
+                    <h3>Predicting Diabetes</h3>
+                    <details>
+                        <summary>Classification Problem</summary>
+                        Logistic regression technique is used for Linear data modelling. Scikit-learn library is used for splitting data set and selecting model.
+                    </details>
+                    <img src="p2.jpeg" alt="">
+                </div>
+
+                <div class="wow">
+                    <h3>Sales Prediction project</h3>
+                    <details>
+                        <summary>regression problem</summary>
+                        K-nearest neighbour technique is used for data modelling. Scikit-learn library is used for splitting data set and selecting model.
+                    </details>
+                    <img src="p2.jpeg" alt="">
+                </div>
+
+
+                <div class="wow">
+                    <h3>Bank Customer Churn project</h3>
+                    <details>
+                        <summary>pandas,Scikit-learn,Matplotlib libraries are used</summary>
+                        Customer churn prediction is the process of using machine learning models to identify customers who are likely to leave in the near future. ML algorithms analyze existing customer data, such as credit score and estimated salary, to identify patterns of customer behavior and make predictions about upcoming churn rates.
+                    </details>
+                    <img src="p2.jpeg" alt="">
+                </div>
+            </div>
+<!-- <img src="scroll.jpeg" alt=""> -->
+
+        </aside>
+        <section id="resume" class="border">
+            <h2 class="heading"> Resume</h2>
+            <!-- download link -->
+            <center>  
+                <h5>Click on the download button to download resume:</h5>  
+                <a href = "SakshiJoshiResume.pdf" download >  
+               <button> download </button>   
+                </a>  
+               
+                </center>  
+            
+            <!-- <img class="imagepdf "src="word.jpeg" alt="Smiley face" height="42" width="42"> -->
+        </section>
+        <section id="contact" class="border">
+            <h2 class="heading">Contact</h2>
+            <div class="con">
+               <p>Email: joshisakshi826@gmail.com</p> 
+               <p> Contact Number: 1234567890</p>
+
+            </div>
+            <center>
+            <div class="photo">
+                <img src="li.jpeg" alt="">
+                <img src="fb.jpeg" alt="">
+                <img src="twitter.jpeg" alt="">
+            </div>
+        </center>
+        </section>
+        <footer id="copyright" class="border">
+            copyright: &copy; joshisakshi826@gmail.com 2023 | All rights reserved!!
+        </footer>
+    </div>
+</body>
+
+</html>
